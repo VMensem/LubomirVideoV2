@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{% block title %}Lubomir Video{% endblock %}</title>
+  <link rel="icon" type="image/png" href="static/content/favicon.png">
+  <meta name="description" content="Професійна зйомка, монтаж та фото.">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <span class="video-close">&times;</span>
+    <video id="videoPlayer" controls autoplay></video>
+  </div>
+</div>
+
+<script src="/static/js/main.js"></script>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">Любомир <span class="brand-accent">Казюк</span></a>
+    <button id="navToggle" class="nav-toggle">☰</button>
+    <nav id="nav" class="nav">
+      <a href="/">Головна</a>
+      <a href="/portfolio">Портфоліо</a>
+      <a href="/contact" class="btn btn-ghost">Зв'язатися</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 <a href="/">Любомир Казюк</a> — Всі права захищені. Розробник сайту - <a href="https://t.me/vladlotto">Vladyslav</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

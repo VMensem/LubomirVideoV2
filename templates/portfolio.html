@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Портфоліо - Lubomir Video{% endblock %}
+{% block content %}
+
+<section id="portfolio" class="section portfolio">
+  <div class="container">
+    <h2>Портфоліо</h2>
+    <p class="lead">Ознайомтеся з деякими з моїх робіт у сфері відеозйомки та монтажу.</p>
+    <p class="muted">Натисніть на відео, щоб переглянути.</p>
+
+    <div class="grid grid-3 portfolio-grid">
+      <a class="portfolio-item" href="/static/content/wedding.mp4" alt="Весільний ролик">
+       <img src="/static/content/wedding.png" muted loop playsinline preload="metadata">
+        <source src="/static/content/wedding.mp4" type="video/mp4">
+        </video>
+      <div class="pi-overlay"><h4>Весільний ролик</h4></div>
+      </a>
+      <a class="portfolio-item" href="/static/content/wedding2.mp4" alt="Весільний ролик">
+       <img src="/static/content/wedding2.png" muted loop playsinline preload="metadata">
+        <source src="/static/content/wedding2.mp4" type="video/mp4">
+        </video>
+      <div class="pi-overlay"><h4>Весільний ролик</h4></div>
+      </a>
+      <a class="portfolio-item" href="/static/content/vipusk.mp4" alt="Випускний ролик">
+       <img src="/static/content/vipusk.png" muted loop playsinline preload="metadata">
+        <source src="/static/content/vipusk.mp4" type="video/mp4">
+        </video>
+      <div class="pi-overlay"><h4>Випускний ролик</h4></div>
+      </a>
+    </div>
+    <br>
+    <div class="grid grid-3 portfolio-grid">
+      <a class="portfolio-item" href="/static/content/reklama.mp4" alt="Рекламний ролик"  >
+       <img src="/static/content/reklama.png" muted loop playsinline preload="metadata">
+        <source src="/static/content/reklama.mp4" type="video/mp4">
+        </video>
+      <div class="pi-overlay"><h4>Рекламний ролик</h4></div>
+      </a>
+      <a class="portfolio-item" href="/static/content/krystyny.mp4" alt="Христини">
+       <img src="/static/content/krystyny.png" muted loop playsinline preload="metadata">
+        <source src="/static/content/krystyny.mp4" type="video/mp4">
+        </video>
+      <div class="pi-overlay"><h4>Христини</h4></div>
+      </a>
+      <a class="portfolio-item" href="/static/content/vipusk2.mp4" alt="Випускний ролик">
+       <img src="/static/content/vipusk2.png" muted loop playsinline preload="metadata">
+        <source src="/static/content/vipusk2.mp4" type="video/mp4">
+        </video>
+      <div class="pi-overlay"><h4>Випускний ролик</h4></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
